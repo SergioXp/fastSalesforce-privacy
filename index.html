@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · FastSalesforce</title>
+<meta name="description" content="Política de privacidad de la extensión FastSalesforce para Chrome. Sin servidores propios, sin analítica y sin telemetría.">
+<meta name="robots" content="index, follow">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231589EE'/%3E%3Cpath d='M13 3 4 14h7l-1 7 9-11h-7l1-7z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: light-dark(#f4f7fb, #0b1118);
+    --card: light-dark(#ffffff, #141d27);
+    --ink: light-dark(#0a1f33, #e6edf5);
+    --ink-soft: light-dark(#4a6577, #9fb3c8);
+    --accent: light-dark(#0b6bcb, #5eb0ff);
+    --line: light-dark(#e2eaf2, #253242);
+    --chip: light-dark(#eaf3fd, #17283c);
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px 64px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; }
+  header { margin-bottom: 28px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+  .logo {
+    display: grid; place-items: center;
+    width: 44px; height: 44px; border-radius: 12px;
+    background: linear-gradient(140deg, #1a8bff, #0b62bd);
+    box-shadow: 0 6px 18px rgba(11, 107, 203, .25);
+    flex: 0 0 auto;
+  }
+  .logo svg { width: 24px; height: 24px; }
+  .brand-text strong { display: block; font-size: 17px; letter-spacing: -.01em; }
+  .brand-text span { color: var(--ink-soft); font-size: 13px; }
+  h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.2; letter-spacing: -.02em; margin: 0 0 10px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .chip {
+    font-size: 12.5px; padding: 5px 11px; border-radius: 999px;
+    background: var(--chip); color: var(--accent);
+    border: 1px solid var(--line); white-space: nowrap;
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 26px 28px;
+    box-shadow: 0 1px 2px rgba(9, 30, 66, .04), 0 8px 24px rgba(9, 30, 66, .05);
+    margin-bottom: 20px;
+  }
+  h2 { font-size: 19px; letter-spacing: -.01em; margin: 0 0 12px; }
+  h3 { font-size: 15px; margin: 22px 0 6px; letter-spacing: -.005em; }
+  h3:first-of-type { margin-top: 4px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  code {
+    font: 13.5px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: var(--chip); color: var(--ink);
+    padding: 1.5px 6px; border-radius: 5px;
+  }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
+  a:hover { border-bottom-color: var(--accent); }
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: var(--chip);
+    padding: 12px 16px; border-radius: 0 10px 10px 0; margin: 0 0 14px;
+    font-size: 15px;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; margin: 0 0 12px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 12.5px; text-transform: uppercase; letter-spacing: .04em; color: var(--ink-soft); font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 30px 0; }
+  .lang { display: flex; gap: 10px; margin-bottom: 22px; font-size: 14px; }
+  .lang a { border: none; }
+  footer { color: var(--ink-soft); font-size: 13px; text-align: center; margin-top: 28px; line-height: 1.7; }
+  @media (max-width: 520px) {
+    body { padding: 26px 14px 48px; }
+    .card { padding: 20px 18px; }
+    table, th, td { font-size: 13.5px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="#fff"><path d="M13 3 4 14h7l-1 7 9-11h-7l1-7z"/></svg>
+      </span>
+      <span class="brand-text">
+        <strong>FastSalesforce</strong>
+        <span>Extensión de Chrome para Salesforce</span>
+      </span>
+    </div>
+    <h1>Política de privacidad</h1>
+    <p style="color:var(--ink-soft);margin:0">Qué hace la extensión con tus datos, en dos minutos y sin letra pequeña.</p>
+    <div class="meta">
+      <span class="chip">Última actualización: 24 de noviembre de 2026</span>
+      <span class="chip">Versión 5.0</span>
+      <span class="chip">Sin servidores propios</span>
+    </div>
+  </header>
+
+  <nav class="lang" aria-label="Idioma">
+    <a href="#es">Español</a> · <a href="#en">English</a>
+  </nav>
+
+  <!-- ══════════════════════════ ESPAÑOL ══════════════════════════ -->
+  <article class="card" id="es">
+    <h2>Español</h2>
+
+    <div class="callout">
+      <p><strong>Resumen:</strong> FastSalesforce no tiene servidores propios. No hay analítica, ni telemetría, ni publicidad, ni cuentas de usuario. Todo lo que guarda se queda en el almacenamiento local de tu navegador y la extensión <strong>solo lee</strong> de tu org de Salesforce.</p>
+    </div>
+
+    <h3>Qué es la extensión</h3>
+    <p>FastSalesforce es una extensión de navegador que añade atajos a las páginas de Setup de Salesforce y una vista para inspeccionar cómo se comparten los registros (quién tiene acceso, por qué y con qué permisos de campo).</p>
+
+    <h3>Qué se guarda en tu navegador</h3>
+    <p>Únicamente, y siempre en <code>chrome.storage.local</code> de tu equipo:</p>
+    <ul>
+      <li>La sesión de API de la org que ya tienes abierta (la cookie <code>sid</code>), guardada por org y con caducidad corta, para poder llamar a la API de esa org en tu nombre.</li>
+      <li>Una caché temporal de los metadatos (objetos y campos) de los que consultas.</li>
+      <li>La lista de los últimos registros abiertos en el inspector.</li>
+      <li>Tu preferencia de tema: automático, claro u oscuro.</li>
+      <li>Qué atajos de Setup has activado en la barra.</li>
+    </ul>
+    <p>Nada de esto se sincroniza con ningún servidor. Se puede borrar desinstalando la extensión; además, la sesión guardada se elimina automáticamente cuando la cookie <code>sid</code> desaparece (es decir, al cerrar sesión en la org).</p>
+
+    <h3>A qué se accede</h3>
+    <p>Solo a las páginas de Salesforce y a la API de la org en la que has iniciado sesión, para <strong>leer</strong> la configuración de compartición, los permisos y los metadatos que ya puedes ver en Salesforce. La extensión <strong>no modifica</strong> registros ni metadatos.</p>
+
+    <h3>Qué no se hace</h3>
+    <ul>
+      <li>No se recopilan datos personales.</li>
+      <li>No se venden ni se comparten datos con terceros.</li>
+      <li>No se usan para publicidad, perfilado ni para evaluar solvencia.</li>
+      <li>No se ejecuta código remoto: todo el código va dentro del paquete de la extensión.</li>
+    </ul>
+
+    <h3>Permisos y para qué sirven</h3>
+    <table>
+      <thead><tr><th>Permiso</th><th>Uso</th></tr></thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>Guardar en local la sesión por org, la caché de metadatos, los registros recientes y el tema.</td></tr>
+        <tr><td><code>cookies</code></td><td>Leer solo la cookie <code>sid</code> de la org abierta, para autenticar las llamadas a su API. Su valor no sale del navegador.</td></tr>
+        <tr><td>Dominios de Salesforce</td><td>Inyectar la barra de atajos en Lightning y consultar la API de la propia org.</td></tr>
+      </tbody>
+    </table>
+    <p>No se piden permisos de pestañas, scripting ni acceso a otros sitios web.</p>
+
+    <h3>Contacto</h3>
+    <p>Para cualquier duda sobre privacidad o para ejercer tus derechos: <a href="mailto:sergiogonzalezhidalgo@gmail.com">sergiogonzalezhidalgo@gmail.com</a>.</p>
+
+    <h3>Cambios en esta política</h3>
+    <p>Si la extensión empieza a tratar datos de otra forma, esta página se actualizará antes de publicar esa versión y cambiará la fecha del encabezado. El histórico de cambios de la política está disponible en el repositorio.</p>
+  </article>
+
+  <hr>
+
+  <!-- ══════════════════════════ ENGLISH ══════════════════════════ -->
+  <article class="card" id="en" lang="en">
+    <h2>English</h2>
+
+    <div class="callout">
+      <p><strong>Summary:</strong> FastSalesforce has no servers of its own. There is no analytics, telemetry, advertising or user account. Everything it stores stays in your browser's local storage, and the extension is <strong>read-only</strong> against your Salesforce org.</p>
+    </div>
+
+    <h3>What the extension is</h3>
+    <p>FastSalesforce is a browser extension that adds shortcuts to Salesforce Setup pages and a view that explains how records are shared (who has access, why, and with which field permissions).</p>
+
+    <h3>What is stored in your browser</h3>
+    <p>Only this, and always in <code>chrome.storage.local</code> on your machine:</p>
+    <ul>
+      <li>The API session of the org you are already signed into (the <code>sid</code> cookie), stored per org with a short lifetime, so requests to that org's API can be made on your behalf.</li>
+      <li>A temporary cache of the metadata (objects and fields) you inspect.</li>
+      <li>The list of the last records opened in the inspector.</li>
+      <li>Your theme preference: auto, light or dark.</li>
+      <li>Which Setup shortcuts you enabled in the bar.</li>
+    </ul>
+    <p>None of it is synced to any server. It can be removed by uninstalling the extension, and the stored session is deleted automatically as soon as the <code>sid</code> cookie disappears (that is, when you sign out of the org).</p>
+
+    <h3>What is accessed</h3>
+    <p>Only Salesforce pages and the API of the org you are signed into, to <strong>read</strong> the sharing configuration, permissions and metadata you can already see in Salesforce. The extension <strong>does not modify</strong> records or metadata.</p>
+
+    <h3>What is not done</h3>
+    <ul>
+      <li>No personal data is collected.</li>
+      <li>No data is sold or shared with third parties.</li>
+      <li>No data is used for advertising, profiling or creditworthiness.</li>
+      <li>No remote code is executed: all code ships inside the extension package.</li>
+    </ul>
+
+    <h3>Permissions and what they are for</h3>
+    <table>
+      <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>Keep the per-org session, metadata cache, recent records and theme locally.</td></tr>
+        <tr><td><code>cookies</code></td><td>Read only the <code>sid</code> cookie of the open org, to authenticate calls to its API. The value never leaves the browser.</td></tr>
+        <tr><td>Salesforce domains</td><td>Inject the shortcut bar in Lightning and query the org's own API.</td></tr>
+      </tbody>
+    </table>
+    <p>No tabs, scripting or access to any other website is requested.</p>
+
+    <h3>Contact</h3>
+    <p>For any privacy question or to exercise your rights: <a href="mailto:sergiogonzalezhidalgo@gmail.com">sergiogonzalezhidalgo@gmail.com</a>.</p>
+
+    <h3>Changes to this policy</h3>
+    <p>If the extension starts handling data differently, this page will be updated before that version is published and the date in the header will change. The policy's change history is available in the repository.</p>
+  </article>
+
+  <footer>
+    FastSalesforce es una herramienta independiente. No está afiliada, patrocinada ni respaldada por Salesforce, Inc.<br>
+    «Salesforce» es una marca registrada de Salesforce, Inc.<br>
+    <span lang="en">FastSalesforce is an independent tool. Not affiliated with, sponsored or endorsed by Salesforce, Inc.</span>
+  </footer>
+
+</div>
+</body>
+</html>
